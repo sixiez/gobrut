@@ -1,5 +1,5 @@
 date_default_timezone_set('Asia/Jakarta');
-include "function.php";
+include "func.php";
 echo color("white","Token: ");
 $token = trim(fgets(STDIN));
 echo "\n".color("white","Claim?: y/n ");
