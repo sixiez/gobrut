@@ -214,8 +214,7 @@ echo color("white","                  Format Kode 62*** \n");
          echo color("white","!] INPUT ULANG..\n");
          goto otp;
          }
-         }
-         else{
+         }else{
          echo color("white","-] NOMOR SALAH");
          echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
          echo color("white","!] MASUKAN LAGI\n");
