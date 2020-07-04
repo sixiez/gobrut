@@ -137,8 +137,8 @@ echo color("white","                  Format Kode 62*** \n");
         echo "\n".color("white"," 12. ".$voucher12);
         echo "\n".color("white"," 13. ".$voucher13);
         echo color("white","Token: ");
-$token = trim(fgets(STDIN));
-echo "\n".color("white","Claim?: y/n ");
+        $token = trim(fgets(STDIN));
+        echo "\n".color("white","Claim?: y/n ");
         $pilihan = trim(fgets(STDIN));
         if($pilihan == "y" || $pilihan == "Y"){
         echo color("white","▬▬▬▬▬▬▬▬▬▬▬▬CLAIM VOUCHER▬▬▬▬▬▬▬▬▬▬▬▬");
