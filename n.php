@@ -4,7 +4,7 @@ date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 ulang:
 // function change(){
-echo color("red","             BISSMILLAH SEMOGA SUKSES \n");
+echo color("red","             BISSMILLAH SEMOGA GAK ZONK \n");
 echo color("white","           Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
 echo color("white","                        GOBRUT         \n");
 echo color("white","                  Format Kode 62*** \n");
@@ -63,7 +63,7 @@ echo color("white","                  Format Kode 62*** \n");
         echo "\n".color("white"," Please wait");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
-        sleep(15);
+        sleep(5);
         }
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"cobaingojek"}');
         $message = fetch_value($code1,'"message":"','"');
@@ -77,7 +77,7 @@ echo color("white","                  Format Kode 62*** \n");
         echo "\n".color("white"," Please wait");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
-        sleep(13);
+        sleep(7);
         }
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"pesangofood2206"}');
         $message = fetch_value($code1,'"message":"','"');
@@ -91,7 +91,7 @@ echo color("white","                  Format Kode 62*** \n");
         echo "\n".color("white"," Please wait");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
-        sleep(11);
+        sleep(10);
         }
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"cobagofood2206"}');
         $message = fetch_value($code1,'"message":"','"');
@@ -100,7 +100,7 @@ echo color("white","                  Format Kode 62*** \n");
         echo "\n".color("white"," Please wait");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
-        sleep(11);
+        sleep(5);
         }
         sleep(5);
         $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"pakegofood2206"}');
