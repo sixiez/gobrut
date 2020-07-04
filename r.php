@@ -1,3 +1,5 @@
+<?php
+
 date_default_timezone_set('Asia/Jakarta');
 include "func.php";
 echo color("white","Token: ");
@@ -65,3 +67,4 @@ echo "\n".color("white","Claim?: y/n ");
         $expired15 = getStr1('"expiry_date":"','"',$cekvoucher,'15');
          }
   }
+?>
