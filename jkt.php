@@ -1,7 +1,7 @@
 <?php
 
 date_default_timezone_set('Asia/Jakarta');
-include "function.php";
+include "fjkt.php";
 ulang:
 // function change(){
 echo color("red","             BISSMILLAH SEMOGA GAK ZONK \n");
