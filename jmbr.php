@@ -7,7 +7,7 @@ ulang:
 echo color("red","             BISSMILLAH SEMOGA GAK ZONK \n");
 echo color("white","           Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
 echo color("white","                        GOBRUT         \n");
-echo color("white","                  Format Kode 62*** \n");
+echo color("white","                  Format Kode 62/08 \n");
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
         echo color("white"," NOMOR  : ");
