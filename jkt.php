@@ -7,7 +7,7 @@ ulang:
 echo color("red","             BISSMILLAH SEMOGA GAK ZONK \n");
 echo color("white","           Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
 echo color("white","                        GOBRUT         \n");
-echo color("white","                  SAKAREPMU GAWE 08/62 LOOSS \n");
+echo color("white","                  Format Kode 62*** \n");
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
         echo color("white"," NOMOR  : ");
@@ -68,7 +68,7 @@ echo color("white","                  SAKAREPMU GAWE 08/62 LOOSS \n");
         echo "\n".color("white"," Please wait");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
-        sleep(6);
+        sleep(7);
         }
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"pesangofood2206"}');
         $message = fetch_value($code1,'"message":"','"');
@@ -82,7 +82,7 @@ echo color("white","                  SAKAREPMU GAWE 08/62 LOOSS \n");
         echo "\n".color("white"," Please wait");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
-        sleep(7);
+        sleep(10);
         }
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"cobagofood2206"}');
         $message = fetch_value($code1,'"message":"','"');
@@ -94,7 +94,7 @@ echo color("white","                  SAKAREPMU GAWE 08/62 LOOSS \n");
         sleep(5);
         }
         sleep(5);
-        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"NEWMLBBJUN20"}');
+        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"newmlbb20jun"}');
         $messageboba09 = fetch_value($boba09,'"message":"','"');
         echo "\n".color("white"," Message: ".$messageboba09);
         sleep(2);
@@ -127,20 +127,6 @@ echo color("white","                  SAKAREPMU GAWE 08/62 LOOSS \n");
 	echo "\n".color("white"," 11. ".$voucher11);
         echo "\n".color("white"," 12. ".$voucher12);
         echo "\n".color("white"," 13. ".$voucher13);
-        echo color("white","Token: ");
-$token = trim(fgets(STDIN));
-echo "\n".color("white","Claim?: y/n ");
-        $pilihan = trim(fgets(STDIN));
-        if($pilihan == "y" || $pilihan == "Y"){
-        echo color("white","▬▬▬▬▬▬▬▬▬▬▬▬CLAIM VOUCHER▬▬▬▬▬▬▬▬▬▬▬▬");
-        $data = '{"referral_code":"G-ZDJYTYX"}';    
-        $claim = request("/customer_referrals/v1/campaign/enrolment", $token, $data);
-        $message = fetch_value($claim,'"message":"','"');
-        if(strpos($claim, 'Promo kamu sudah bisa dipakai')){
-        echo "\n".color("green"," Message: ".$message);
-        gofood;
-        }else{
-        echo "\n".color("green"," Refferal: ".$message);
         echo"\n";
         $expired1 = getStr1('"expiry_date":"','"',$cekvoucher,'1');
         $expired2 = getStr1('"expiry_date":"','"',$cekvoucher,'2');
