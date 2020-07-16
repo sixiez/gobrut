@@ -8,7 +8,7 @@ echo "\n".color("white","Claim?: y/n ");
         $pilihan = trim(fgets(STDIN));
         if($pilihan == "y" || $pilihan == "Y"){
         echo color("white","▬▬▬▬▬▬▬▬▬▬▬▬CLAIM VOUCHER▬▬▬▬▬▬▬▬▬▬▬▬");
-        $data = '{"referral_code":"G-BQFJZZQ"}';    
+        $data = '{"referral_code":"G-ZDJYTYX"}';    
         $claim = request("/customer_referrals/v1/campaign/enrolment", $token, $data);
         $message = fetch_value($claim,'"message":"','"');
         if(strpos($claim, 'Promo kamu sudah bisa dipakai')){
